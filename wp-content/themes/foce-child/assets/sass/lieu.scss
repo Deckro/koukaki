@@ -1,0 +1,34 @@
+.story #place{
+    background-image: url('./images/Studio_Koukaki-image_place.png');
+    position: relative;
+    z-index: 1;
+}
+.placeafter{
+    content: url('./images/big_cloud.png');
+    position: absolute;
+    z-index: 2;
+    top: 65px;
+    right: 395px;
+}
+.placebefore{
+    content: url('./images/little_cloud.png');
+    position: absolute;
+    z-index: 2;
+    right: 805px;
+    top: 248px;
+}
+.placebefore, .placeafter{
+    animation-fill-mode: forwards;
+    animation-duration: 5000ms;
+    animation-delay: 500ms;
+    animation-timing-function: ease-in-out;
+}
+@keyframes nuage{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(300px);
+    }
+}
+

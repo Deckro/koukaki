@@ -1,0 +1,48 @@
+
+.oscar{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+	margin-top: 45px;
+    margin-bottom: 140px;
+}
+.textoscar{
+	background: url("./images/rectangle 23.png");
+    width: 626px;
+    height: 252px;
+    font-size: 30px;
+    font-family: quicksand;
+    margin-top: 150px;
+    padding-top: 20px;
+    padding-left: 60px;
+    color: white;
+}
+.imgoscar{
+    background-image: url("./images/oscar.png");
+    width: 270px;
+    height: 129px;
+    margin-top: 160px;
+}
+.before {
+	content: url("./images/Sunflower.png");
+    position: absolute;
+    width: 155px;
+    height: 155px;
+    left: 5em;
+    top: 7em;
+}
+
+.after {
+	content: url("./images/orchid.png");
+    position: absolute;
+    width: 173px;
+    height: 173px;
+    right: -4em;
+	bottom: 21.8em;
+    overflow: hidden;
+}
+.site-footer::before, .site-footer::after{
+	display: none;
+}
+

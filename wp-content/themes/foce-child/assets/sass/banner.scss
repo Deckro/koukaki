@@ -1,0 +1,62 @@
+.video{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+.titre__anime{
+    position: absolute;
+    z-index: 2;
+    animation-name: transition_titre, floating;
+    animation-duration:3000ms, 8000ms;
+    animation-delay: 0ms, 3000ms;
+    animation-timing-function: ease-in-out, linear;
+    animation-iteration-count: 1, infinite;
+}
+
+@keyframes floating{
+
+     0%{
+        transform: translateY(0px);
+     }
+     25%{
+        transform: translateY(-20px);
+     }
+     50%{
+        transform: translateY(0px);
+     }
+     75%{
+        transform: translateY(20px);
+     }
+     100%{
+        transform: translateY(0px);
+     }
+}
+
+.video__transition{
+   animation-name: transition_video;
+   animation-duration: 3000ms;
+   animation-delay: 0ms;
+   animation-timing-function: ease-in-out;
+
+   animation-iteration-count: 1;
+}
+
+
+@keyframes transition_video{
+   0%{
+       transform: translateY(-10vh);
+       opacity: 0;
+   }
+   100%{
+       transform: translateY(0px);
+       opacity: 1;
+   }
+}
+
+
+
+@media screen and (max-width: 999px){
+   video{
+      display: none;
+   }
+}

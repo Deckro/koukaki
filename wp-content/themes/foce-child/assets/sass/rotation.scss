@@ -1,0 +1,45 @@
+
+
+.rotationLent{
+  animation: rotateLent infinite 15s linear;
+}
+
+.rotationRapide{
+  animation: rotateRapide infinite 2s linear;
+}
+
+
+.rotationLentAfter::after{
+  animation: rotateLent infinite 15s linear forwards;
+}
+.rotationLentBefore::before{
+  animation: rotateLent infinite 15s linear forwards;
+}
+
+.rotationRapideAfter::after{
+  animation: rotateRapide infinite 2s linear forwards;
+}
+.rotationRapideBefore::before{
+  animation: rotateRapide infinite 2s linear forwards;
+}
+
+
+@keyframes rotateLent{
+  from{
+    transform:rotate(0deg);
+  }
+  
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+@keyframes rotateRapide{
+from{
+  transform:rotate(0deg);
+  }
+  
+  to{
+    transform:rotate(360deg);
+  }
+}

@@ -1,0 +1,72 @@
+h2, h3, .story #characters h3,#studio h2,.story #place h3{
+    background-image: none;
+    background: transparent;
+    margin: 0;
+}
+.story h2::before, .story h2::after{
+    display: none;
+}
+.story::before {
+	content: url("images/sunflower_leaves.png");
+	position: absolute;
+	left: 0;
+	top: 7.8em;
+	z-index: -1;
+}
+.story{
+    position: relative;
+}
+
+.story::after {
+	content: url("images/Sunflower.png");
+	position: absolute;
+	left: 3em;
+    top: 27em;
+    width: 154px;
+    height: 154px;
+}
+.bg{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bgstory{
+    position: relative;
+    background-image: url("images/purple_title_bg.png");
+}
+.bgcharacters{
+    background-image: url("images/orange_characters_bg.png");
+}
+.bglieu{
+    background-image: url("images/orange_place_bg.png");
+}
+.bgstudio{
+    background-image: url("images/purple_title_bg.png");
+    padding: 30px;
+    padding-left: 0;
+    margin-left: 100px;
+}
+.titreAnimation{
+    animation-name: transition_titre;
+    animation-duration: 3000ms;
+    animation-delay: 0ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes transition_titre{
+    0%{
+        transform: translateY(10vh);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.titreInvisible{
+    opacity: 0;
+}

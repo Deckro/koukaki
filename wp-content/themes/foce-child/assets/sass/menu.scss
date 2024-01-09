@@ -1,0 +1,197 @@
+.sidenav{
+    height: calc(100vh - 80px);
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: none;
+    background-color: antiquewhite;
+    padding: 10px;
+    transition: left 0.5s ease;
+}
+.sidenav a{
+    text-decoration: none;
+    font-size: 60px;
+    color: #000;
+    display: flex;
+    transition: 0.3s;
+    width: auto;
+    height: auto;
+    margin-top: 0%;
+
+}
+.sidenav a:hover, .close:hover{
+    text-shadow: 0px 0px 14px #FF5C00;
+}
+.sidenav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidenav.active1{
+    top: 80px;
+    display: block;
+}
+.iconeburger.active2{
+    display: none;
+}
+.close{
+    opacity: 0;
+    right: 50px;
+    position: absolute;
+    top: 10px;
+    font-size: 32px;
+    display: block;
+    background-color: #FFD5A2;
+}
+.close.active2{
+    opacity: 1;
+}
+.main-navigation{
+    display: flex;
+    justify-content: center;
+}
+
+.main-navigation ul{
+    flex-direction: column;
+    justify-content: unset;
+    margin-top: 0px;
+}
+
+.site-navigation{
+    position: relative;
+}
+.site-title{
+    width: 350px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.line{
+    background-color: #000;
+    width: 60px;
+    height: 1px;
+}
+.iconeburger{
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+}
+.Histoire{
+    margin-right: -100%;
+    margin-left: -80%;
+}
+.perso{
+    margin-left: -22%;
+}
+.placeoulieu{
+    margin-left: -72%;
+}
+#koukaki{
+    width: 1440px;
+    margin-top: -2%;
+    margin-left: 9.5%;
+    margin-bottom: -3%;
+}
+
+.close::before{
+    content: url("./images/logo.png");
+    position: absolute;
+    left: -24em;
+    width: 154px;
+    height: 95px;
+    display: none;
+    justify-content: center;
+}
+.Histoire::after{
+    content: url("./images/Sunflower.png");
+    margin-left: 10%;
+    height: 154px;
+    width: 154px;
+    margin-top: -3%;
+}
+.Histoire::before{
+    content: url("./images/orchid.png");
+    width: 173px;
+    height: 173px;
+    margin-right: 29%;
+    margin-top: -7%;
+}
+.perso::after{
+    content: url("./images/random_flower.png");
+    display: flex;
+    height: 80px;
+    width: 80px;
+    margin-left: 63%;
+    margin-top: 7%;
+}
+.perso::before{
+    content: url("./images/cat_bleu.png");
+    margin-top: -17%;
+    margin-right: 16%;
+}
+.placeoulieu::before{
+    content: url("./images/flower.png");
+    height: 110px;
+    width: 110px;
+    margin-right: 45%;
+}
+.placeoulieu::after{
+    content: url("./images/cat_noir.png");
+    margin-left: 33%;
+}
+.koukaki::before{
+    content: url("./images/cat_roux.png");
+    margin-right: 16%;
+    margin-top: 6%;
+}
+.studiokouk::before{
+    content: url("./images/studio koukaki.png");
+    display: flex;
+    margin-left: 22%;
+}
+.studiokouk::after{
+    content: url("./images/hibiscus.png");
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin-top: -42%;
+    margin-left: 178%;
+}
+.logomenu{
+    width: 150px;
+    position: relative;
+    left: 45%;
+}
+.koukaki::before,.placeoulieu::after,.perso::before{
+    z-index: 2;
+    animation-name: floating2;
+    animation-duration:8000ms;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+ }
+ 
+ @keyframes floating2{
+ 
+      0%{
+         transform: translateY(0px);
+      }
+      25%{
+         transform: translateY(-20px);
+      }
+      50%{
+         transform: translateY(0px);
+      }
+      75%{
+         transform: translateY(20px);
+      }
+      100%{
+         transform: translateY(0px);
+      }
+ }
